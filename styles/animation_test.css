@@ -1,0 +1,307 @@
+a{
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+
+.main-box{
+    font:inherit;
+    display: grid;
+    grid-template-areas: 
+    "menu menu menu"
+    "human middle middle"
+    "human middle middle";
+    min-height: 100vh;
+    grid-template-columns: 20% auto 10%;
+    grid-template-rows: 10% auto auto;
+}
+
+.main-box a{
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.main-box a:hover{
+    color: #f6fc84;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #FF9FFC;
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+.flex-element-logo{
+    flex: 0 0 19.5%;
+}
+
+.flex-element-blog{
+    flex-grow: 1;
+}
+
+.flex-element-discusion{
+    flex-grow: 1;
+}
+
+.flex-element-contacts{
+    flex-grow: 1;
+}
+
+.flex-element-aboutProject{
+    flex-grow: 1;
+}
+
+
+.human{
+    grid-area: human;
+    background-color: #FFFFF0;
+}
+
+.middle{
+    grid-area: middle;
+    background-color: #4C1A4A;
+}
+
+.area-for-animation{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.animation-post p{
+    font: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 2%;
+}
+
+.text-for-post{
+    display: flex;
+    width: 100%;
+}
+
+.element-flex-post{
+    flex: 0 0 75%;
+}
+
+.element-flex-postNumber{
+    text-align: right; 
+    flex-wrap: nowrap;
+}
+
+@keyframes post-anim-main-page{
+    0% {
+        opacity: 0%;
+        z-index: 5;
+    }
+    10% {
+        z-index: 5;
+    }
+    25% {
+        opacity: 100%;
+        z-index: 5;
+    }
+    25% {
+        transform: translateY(15%);
+        opacity: 100%;
+        width: 75%;
+        z-index: 5;
+        height: 70%;
+    }
+    88% {
+        transform: translate(-22%, -9%);
+        opacity: 13%;
+        width: 60%;
+        height: 56%;
+        z-index: 0;
+    }
+    93% {
+        transform: translate(-25%, -14%);
+        opacity: 0%;
+        width: 60%;
+        height: 26%;
+        z-index: 0;
+    }
+    100% {
+        transform: translate(-25%, -14%);
+        opacity: 0%;
+        width: 60%;
+        height: 26%;
+        z-index: 0;
+    }
+}
+
+
+
+ /* .animation-post{
+    width: 75%;
+    height: 38%;
+    border: 12px solid black;
+    border-radius: 55px;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 0;
+    animation-name: post-anim-main-page;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+} */
+
+
+.animation-post{
+    width: 75%;
+    height: 70%;
+    border: 12px solid black;
+    border-radius: 55px;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 10%;
+    animation-iteration-count: infinite;
+}
+
+
+.first{
+    animation-name: post-anim-main-page;
+    animation-duration: 4.7s;
+    animation-delay: 0.3s;
+    opacity: 0;
+    /* animation: post-anim-main-page1 .5s forwards; */
+    /* animation-fill-mode: forwards; */
+
+}
+
+
+.second{
+    animation-name: post-anim-main-page;
+    animation-duration: 4.7s;
+    animation-delay: 1.9s;
+    opacity: 0;
+}
+
+.third{
+    animation-name: post-anim-main-page;
+    animation-duration: 4.7s;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+
+
+.area-for-text > p{
+    font-family: "Lobster";
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    position: relative;
+    
+}
+
+.area-for-text{
+    position: relative;
+    right: 20wh;
+    -webkit-text-stroke: black 0.5px;
+}
+
+.second-p-main{
+    text-align: end;  
+    transform: translateX(-2%);
+    margin: 0.5em;
+}
+
+.animation-text1{
+    text-align: center; 
+    margin-bottom: 0%;
+    animation: typing 2.4s steps(25,end), blink .5s step-end infinite, blind 1s 3s forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #ffffff;
+    border-color: transparent;
+}
+
+.animation-text2{
+    text-align: center; 
+    margin-bottom: 0%;
+    animation: typing 2.4s steps(25,end) 3s, blink .5s step-end 3s infinite, blind 1s 4.7s forwards, visiable 3.2s forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #ffffff;
+    border-color: transparent;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #ffffff;
+    }
+}
+
+@keyframes blind{
+    from{
+        border-color: transparent;
+    }
+    
+    to{
+        border-color: transparent;
+    }
+}
+
+
+@keyframes visiable {
+    from{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+    
+}
+
+
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/ROBOTOSLAB-REGULAR.TTF
+    )format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf
+    )format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

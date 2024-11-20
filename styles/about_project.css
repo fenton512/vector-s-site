@@ -1,0 +1,108 @@
+a{
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto";
+    height: 100%;
+}
+
+
+.main-box a{
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+
+.main-box{
+    min-height: 100vh;
+    font: inherit;
+    display: grid;
+    grid-template-rows: 10% auto;
+}
+
+
+.menu {
+    background-color: #FF9FFC;
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    align-items: center;
+    flex: 0 0 10%;
+}
+
+.flex-element-logo{
+    flex: 0 0 19.5%;
+    
+}
+
+.flex-element-blog{
+    flex-grow: 1;
+}
+
+.flex-element-discusion{
+    flex-grow: 1;
+}
+
+.flex-element-contacts{
+    flex-grow: 1;
+}
+
+.flex-element-aboutProject{
+    flex-grow: 1;
+}
+
+.first-p::after{
+    content: '👉';
+}
+
+/* .first-p{
+    display: ;
+} */
+
+.content{
+    display: flex;
+}
+
+.right-part{
+    flex: 0 0 15%;
+}
+
+.left-part{
+    font-size: 2rem;
+}
+
+.middle-part{
+    flex: 0 0 auto;
+    font-size: 300%;
+    transform: translateY(14%);
+}
+
+
+
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/ROBOTOSLAB-REGULAR.TTF
+    )format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf
+    )format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
