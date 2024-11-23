@@ -24,7 +24,7 @@ body{
     min-height: 100vh;
     font: inherit;
     display: grid;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 10% 42% auto 10%;
 }
 
 
@@ -58,9 +58,6 @@ body{
     flex-grow: 1;
 }
 
-.first-p::after{
-    content: '👉';
-}
 
 /* .first-p{
     display: ;
@@ -68,21 +65,44 @@ body{
 
 .content{
     display: flex;
+    max-height: fit-content;
 }
 
 .right-part{
     flex: 0 0 15%;
+    max-height: fit-content;
 }
 
 .left-part{
     font-size: 2rem;
+    max-height: fit-content;
 }
 
 .middle-part{
     flex: 0 0 auto;
     font-size: 300%;
-    transform: translateY(14%);
+    transform: translateY(92%);
+    max-height: fit-content;
 }
+
+.social-media-bottom{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.soc-med-git{
+    flex: 1 0 0;
+}
+
+.soc-med-tg{
+    flex: 1 0 0;
+}
+
+.soc-med-mail{
+    flex: 1 0 0;
+}
+
 
 
 
