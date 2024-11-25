@@ -66,6 +66,7 @@ body{
 .content{
     display: flex;
     max-height: fit-content;
+    justify-content: center;
 }
 
 .right-part{
@@ -150,7 +151,11 @@ body{
     margin-right: 5px;
 }
 
-
+.main-text{
+    font-size: 1.7rem;
+    margin: 0 auto;
+    max-width: 50%;
+}
 
 
 
