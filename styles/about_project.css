@@ -24,7 +24,7 @@ body{
     min-height: 100vh;
     font: inherit;
     display: grid;
-    grid-template-rows: 10% 42% auto 15%;
+    grid-template-rows: 10% auto 15%;
 }
 
 
@@ -59,10 +59,6 @@ body{
 }
 
 
-/* .first-p{
-    display: ;
-} */
-
 .content{
     display: flex;
     max-height: fit-content;
@@ -70,17 +66,22 @@ body{
 }
 
 .right-part{
-    flex: 0 0 15%;
+    flex: 1 0 15%;
     max-height: fit-content;
 }
 
 .left-part{
     font-size: 2rem;
     max-height: fit-content;
+    flex: 1 0 50%;
+}
+
+.left-part p{
+    margin-left: 3%;
 }
 
 .middle-part{
-    flex: 0 0 auto;
+    flex: 1 0 auto;
     font-size: 300%;
     transform: translateY(92%);
     max-height: fit-content;
@@ -153,8 +154,8 @@ body{
 
 .main-text{
     font-size: 1.7rem;
-    margin: 0 auto;
-    max-width: 50%;
+    margin-top: 10%;
+
 }
 
 
