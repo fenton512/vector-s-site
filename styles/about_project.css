@@ -13,7 +13,7 @@ body{
     height: 100%;
 }
 
-
+/* #region main-box*/
 .main-box a{
     font-weight: 100;
     font-size: 2rem;
@@ -27,7 +27,9 @@ body{
     grid-template-rows: 10% auto 15%;
 }
 
+/* #endregion */
 
+/* #region upper-menu*/
 .menu {
     background-color: #FF9FFC;
     display: flex;
@@ -57,19 +59,26 @@ body{
 .flex-element-aboutProject{
     flex-grow: 1;
 }
+/* #endregion*/
 
-
+/* #region content*/
 .content{
     display: flex;
     max-height: fit-content;
     justify-content: center;
 }
-
+/* #region right-part*/
 .right-part{
     flex: 1 0 15%;
     max-height: fit-content;
 }
+.main-text{
+    font-size: 1.7rem;
+    margin-top: 10%;
 
+}
+/* #endregion*/
+/* #region left-part*/
 .left-part{
     font-size: 2rem;
     max-height: fit-content;
@@ -79,14 +88,16 @@ body{
 .left-part p{
     margin-left: 3%;
 }
-
+/* #endregion*/
 .middle-part{
     flex: 1 0 auto;
-    font-size: 300%;
-    transform: translateY(92%);
+    font-size: 500%;
+    transform: translateY(5%);
     max-height: fit-content;
 }
+/* #endregion content*/
 
+/*# region social-media*/
 .social-media-bottom{
     display: flex;
     flex-wrap: nowrap;
@@ -94,21 +105,34 @@ body{
     align-items: center;
 }
 
+.social-media-bottom a:hover{
+    color: wheat;
+}
+/* #region git*/
 .soc-med-git{
     flex: 1 0 0;
     text-align: center;
     
 }
 
+.git::before{
+    content: '';
+    background-size: cover;
+    background-image: url(../images/github.png);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transform: translateY(25%);
+    margin-right: 5px;
+}
+/* #endregion*/
+
+/* #region tg*/
 .soc-med-tg{
     flex: 1 0 0;
     text-align: center;
 }
 
-.soc-med-mail{
-    flex: 1 0 0;
-    text-align: center;
-}
 
 .soc-med-tg center > *{
     display: inline-block;
@@ -116,9 +140,6 @@ body{
     max-height: fit-content;
 }
 
-.social-media-bottom a:hover{
-    color: wheat;
-}
 
 .tg::before{
     content: '';
@@ -129,6 +150,13 @@ body{
     display: inline-block;
     transform: translateY(25%);
     margin-right: 5px;
+}
+/* #endregion*/
+
+/* #region mail*/
+.soc-med-mail{
+    flex: 1 0 0;
+    text-align: center;
 }
 
 .mail::before{
@@ -141,23 +169,9 @@ body{
     transform: translateY(25%);
     margin-right: 5px;
 }
-.git::before{
-    content: '';
-    background-size: cover;
-    background-image: url(../images/github.png);
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    transform: translateY(25%);
-    margin-right: 5px;
-}
+/* #endregion*/
 
-.main-text{
-    font-size: 1.7rem;
-    margin-top: 10%;
-
-}
-
+/* #endregion social-media*/
 
 
 @font-face {
