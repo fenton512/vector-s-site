@@ -28,13 +28,13 @@ body{
     font-size: 2rem;
 }
 
-.main-box a:hover{
-    color: #f6fc84;
+.main-box button:hover{
+    color: #ffa600;
 }
 
 .menu {
     grid-area: menu;
-    background-color: #FF9FFC;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     gap: 0.5vw;
@@ -61,10 +61,20 @@ body{
     flex-grow: 1;
 }
 
+.menu button{
+    background-color: #4C1A4A;
+    color: #fff;
+    font: inherit;
+    border-radius: 30px;
+    border: black;
+    width: 83%;
+    height: 7.5vh;
+    font-size: 197%;
+}
 
 .human{
     grid-area: human;
-    background-color: #FFFFF0;
+    background-color: #4C1A4A;
 }
 
 .middle{
@@ -301,6 +311,15 @@ body{
     font-family: "Lobster";
     src: url(../fonts/Lobster-Regular.ttf
     )format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Century";
+    src: url(../fonts/centurygothic.ttf)
+    format(truetype);
     font-weight: 400;
     font-style: normal;
     font-display: swap;
