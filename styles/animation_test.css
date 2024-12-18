@@ -23,13 +23,12 @@ body{
     grid-template-rows: 10% auto auto;
 }
 
-.main-box a{
-    font-weight: 100;
-    font-size: 2rem;
-}
-
 .main-box button:hover{
     color: #ffa600;
+}
+
+.main-box button:active{
+    background-color: #ffa600;
 }
 
 .menu {
@@ -89,6 +88,7 @@ body{
     width: 83%;
     height: 7.5vh;
     font-size: 197%;
+    cursor: pointer;
 }
 
 .human{
