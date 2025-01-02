@@ -9,33 +9,6 @@ a{
     color: inherit;
 }
 
-.grid-container-reg, 
-.grid-container-with-choise {
-    font:inherit;
-    min-height: 100vh;
-    display: grid;
-}
-
-.grid-container-reg{
-    grid-template-areas: 
-    "menu menu menu"
-    "l m  r"
-    "l m r";
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 10% auto auto;
-    
-}
-
-.grid-container-with-choise {
-    grid-template-areas: 
-    "menu menu menu"
-    "l m r"
-    "l m r"
-    "f f f";
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows: 10% auto auto 30%;
-}
-
 .main-box button:hover{
     color: #ffa600;
 }
@@ -45,12 +18,12 @@ a{
 }
 
 .menu {
-    grid-area: menu;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     gap: 0.5vw;
     align-items: center;
+    height: 10vh;
 }
 
 .flex-element-logo{
@@ -104,34 +77,20 @@ a{
     cursor: pointer;
 }
 
-.grid-element-main-box {
-    grid-area: m;
-}
-
-.grid-element-empty {
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* scroll*/
     background-color: #4C1A4A;
 }
 
-#left {
-    grid-area: l;
-}
-
-#right {
-    grid-area: r;
-}
-
-#bottom {
-    grid-area: f;
-}
-
-.grid-element-main-box, 
-.grid-element-empty {
-    border-top: 3px solid #4C1A4A;
-    
-}
-
-.grid-element-main-box {
+.quastion-box {
     position: relative;
+    width: 650px;
+    height: 600px;
+    background-color: #fff;
 }
 
 @font-face {
