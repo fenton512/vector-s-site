@@ -1,12 +1,15 @@
-body{
-    margin: 0;
-    font-family: "Roboto";
-}
+/* #region global*/
 
 a{
     font-family: inherit;
     text-decoration: none;
     color: inherit;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Roboto";
 }
 
 .main-box button:hover{
@@ -16,7 +19,10 @@ a{
 .main-box button:active{
     background-color: #ffa600;
 }
+/*#endregion*/
 
+
+/*#region menu*/
 .menu {
     background-color: #ffffff;
     display: flex;
@@ -65,7 +71,8 @@ a{
     flex-grow: 1;
 }
 
-.menu button{
+.menu button,
+.flex-button {
     background-color: #4C1A4A;
     color: #fff;
     font: inherit;
@@ -77,21 +84,52 @@ a{
     cursor: pointer;
 }
 
+.menu button:hover,
+.flex-button:hover {
+    color: #ffa600;
+}
+
+/* #endregion*/
+
+
+/* #region main-box*/
 .flex-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden; /* scroll*/
     background-color: #4C1A4A;
 }
 
+/*#region quastion-box*/
 .quastion-box {
     position: relative;
-    width: 650px;
+    width: 40vw;
     height: 600px;
     background-color: #fff;
 }
+
+.button-choice-over-two {
+    display: flex;
+    height: fit-content;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+    top: 20%;
+}
+
+.flex-button {
+    flex-grow: 0.3;
+    width: 1.6vw;
+    height: 5vw;
+    font-size: 2.1vw;
+
+}
+
+/* #endregion*/
+
+/* #endregion*/
 
 @font-face {
     font-family: "Roboto";

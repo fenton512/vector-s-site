@@ -4,7 +4,7 @@ class Linker {
     static aboutProject = "./about_project.html";
     static blog = '';
     static discusion = '';
-    static contacts = '';
+    static account = './account.html';
 
 
 
