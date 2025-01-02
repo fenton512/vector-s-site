@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/account.css">
     <title>Account</title>
+    <script src="js_code/Animator.js" defer></script>
+    <script src="js_code/Linker.js" defer></script>
+    <script src="./js_code/Initializer.js" defer></script>
+    <script src="js_code/Main.js" defer></script>
 </head>
 <body>
         <nav class = "menu">
@@ -19,9 +23,9 @@
                 <button id = "discusion-button">Обсуждения</button>
             </div>
             <div class = "flex-element-accaunt">
-                <button id = "accaunt-button">Аккаунт</button>
+                <button id = "account-button">Аккаунт</button>
             </div>
-            <div class = "flex-element-aboutProject">
+            <div class = "flex-element-aboutProject" >
                 <button id = "about-project-button">О проекте</button>
             </div>
         </nav>
@@ -31,8 +35,8 @@
                 <h1 style="font-size: 3vw;">Уже есть аккаунт на vector's site?</h1>
                 </center>
                 <div class="button-choice-over-two">
-                    <button class="flex-button">ДА</button>
-                    <button class="flex-button">НЕТ</button>
+                    <button class="flex-button" id="choice-button-yes">ДА</button>
+                    <button class="flex-button" id="choice-button-no">НЕТ</button>
                 </div>
             </div>
         </section>
