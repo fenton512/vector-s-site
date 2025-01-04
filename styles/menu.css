@@ -1,0 +1,65 @@
+.menu {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    align-items: center;
+    height: 10vh;
+}
+
+.flex-element-logo{
+    flex: 0 0 19.5%;
+    display: flex;
+    max-height: 100%;
+    justify-content: space-between;
+}
+
+.logo-img{
+    object-fit: contain;
+    flex: 0 0 40%;
+    width: 40%;
+}
+
+.logo-text{
+    flex-grow: 1;
+    font-size: 220%;
+    margin: 3.78% 0 0 0 ;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color:#4C1A4A;
+    line-height: 101%
+}
+
+.flex-element-blog{
+    flex-grow: 1;
+}
+
+.flex-element-discusion{
+    flex-grow: 1;
+}
+
+.flex-element-accaunt{
+    flex-grow: 1;
+}
+
+.flex-element-aboutProject{
+    flex-grow: 1;
+}
+
+.menu button,
+.flex-button {
+    background-color: #4C1A4A;
+    color: #fff;
+    font: inherit;
+    border-radius: 30px;
+    border: black;
+    width: 83%;
+    height: 7.5vh;
+    font-size: 197%;
+    cursor: pointer;
+}
+
+.menu button:hover,
+.flex-button:hover {
+    color: #ffa600;
+}

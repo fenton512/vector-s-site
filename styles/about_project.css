@@ -29,55 +29,7 @@ body{
 
 /* #endregion */
 
-/* #region upper-menu*/
-.menu {
-    background-color: #FF9FFC;
-    display: flex;
-    justify-content: center;
-    gap: 0.5vw;
-    align-items: center;
-    flex: 0 0 10%;
-}
 
-.flex-element-logo{
-    flex: 0 0 19.5%;
-    
-}
-
-.flex-element-blog{
-    flex-grow: 1;
-}
-
-.flex-element-discusion{
-    flex-grow: 1;
-}
-
-.flex-element-contacts{
-    flex-grow: 1;
-}
-
-.flex-element-aboutProject{
-    flex-grow: 1;
-}
-/* #endregion*/
-
-/* #region content*/
-.content{
-    display: flex;
-    max-height: fit-content;
-    justify-content: center;
-}
-/* #region right-part*/
-.right-part{
-    flex: 1 0 15%;
-    max-height: fit-content;
-}
-.main-text{
-    font-size: 1.7rem;
-    margin-top: 10%;
-
-}
-/* #endregion*/
 /* #region left-part*/
 .left-part{
     font-size: 2rem;

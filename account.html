@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/menu.css"> 
     <link rel="stylesheet" href="./styles/account.css">
     <title>Account</title>
-    <script src="js_code/Animator.js" defer></script>
+    <script src="js_code/AccountPage.js" defer></script>
+    <script src="js_code/ElementBehavior.js" defer></script>
     <script src="js_code/Linker.js" defer></script>
     <script src="./js_code/Initializer.js" defer></script>
     <script src="js_code/Main.js" defer></script>
@@ -32,8 +35,7 @@
         <section class = "flex-box">
             <div class="quastion-box">
                 <center>
-                <h1 style="font-size: 3vw;">Уже есть аккаунт на vector's site?</h1>
-                </center>
+                <h1 style="font-size: 3vw;" id="question-paragraph">Уже есть аккаунт на vector's site?</h1>                </center>
                 <div class="button-choice-over-two">
                     <button class="flex-button" id="choice-button-yes">ДА</button>
                     <button class="flex-button" id="choice-button-no">НЕТ</button>
