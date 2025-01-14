@@ -14,7 +14,7 @@ let AccountPage = {
         }, 300);    
         setTimeout(() => {
             this.REGISTRATION_FORM.classList.add("registration-form-visiable");
-            ElementBehavior.hideShowElem(this.REGISTRATION_FORM);
+            ElementBehavior.hideShowElem(document.querySelector(".registration-box"));
         }, 300)
     }
 }
