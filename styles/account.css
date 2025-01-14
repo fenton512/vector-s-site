@@ -18,23 +18,38 @@
     background-color: #4C1A4A;
 }
 .registration-box {
-    /* position: absolute; */
     width: 60vw;
     height: 70vh;
     display: flex;
     justify-content: center;
     flex-basis: inherit;
-    /* top: 14%; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .hide {
     display: none;
 }
 
+input[type="submit"] {
+    background-color: #4C1A4A;
+    color: white;
+    border: white;
+    font: inherit;
+    border-radius: 18px;
+    border: black;
+    width: 15%;
+    height: 7%;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    color: #ffa600;
+}
+
 /*#region quastion-box*/
 .question-box {
     position: relative;
-    width: 40vw;
+    width: 46vw;
     height: 600px;
     background-color: #fff;
     display: flex;
@@ -60,6 +75,8 @@
 
 }
 
+/*#region classes with animation*/
+
 .animation-for-quastion-box {
     animation-name: animation-after-get-answer;
     animation-duration: 2.5s;
@@ -67,26 +84,39 @@
     animation-fill-mode: forwards;
 }
 
+.animation-for-label {
+    animation-name: label-animation;
+    animation-duration: 2.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
 
+.animation-for-input {
+    animation-name: input-animation;
+    animation-duration: 2.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+/*#endregion*/
 form input {
-    width: 50%;
-    margin-left: 15%;
+    width: 42%;
     max-height: fit-content;
 }
 
 form label {
-    margin-left: 30%;
-    font-size: large;
+    margin-left: 20%;
+    font-size: 2.3vh;
     max-height: fit-content;
 }
 
 .registration-form-visiable {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-row-gap: 60%; */
-    margin-top: 10%;
-    max-height: fit-content;
+    grid-template-columns: 1.5fr 1fr;
+    grid-row-gap: 4%;
+    margin-top: -3%;
+    height: 40vh;
     grid-template-rows: 80px 80px 80px 80px;
+    width: 100%;
 }
 /* #endregion*/
 
@@ -102,8 +132,18 @@ form label {
         transform: translateY(10%);
     }
 }
+
 @keyframes input-animation {
-    
+    100% {
+        width: 104%;
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes label-animation {
+    100% {
+        margin-left: 3%;
+    }
 }
 /* #endregion*/
 
