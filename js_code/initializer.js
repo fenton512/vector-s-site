@@ -1,21 +1,16 @@
 class Initializer {
-    static aboutProjectButton = document.querySelector("#about-project-button");
-    static blogButton = document.querySelector("#blog-button");
-    static accauntButton = document.querySelector("#account-button");
+    static ABOUT_PROJECT_BUTTON = document.querySelector("#about-project-button");
+    static BLOG_BUTTON = document.querySelector("#blog-button");
+    static ACCOUNT_BUTTON = document.querySelector("#account-button");
 
     static initializeElements() {
-        this.aboutProjectButton.addEventListener("click", function() {ElementBehavior.goTo(Linker.aboutProject)});
-        this.accauntButton.addEventListener("click", function() {ElementBehavior.goTo(Linker.account)});
+        this.ABOUT_PROJECT_BUTTON.addEventListener("click", function() {ElementBehavior.goTo(Linker.ABOUT_PROJECT)});
+        this.ACCOUNT_BUTTON.addEventListener("click", function() {ElementBehavior.goTo(Linker.ACCOUNT)});
 
-        // switch (document.location) {
-        //     case Linker.account:
-        //         console.log(123);
-        //         AccountPage.buttonNo.addEventListener("click", () => {AccountPage.openRegForm});
-        //         break;
-        // }
-
-        if (document.location == Linker.account) {
-            AccountPage.buttonNo.addEventListener("click", () => {AccountPage.openRegForm()});
+        switch (document.location.toString()) {
+            case Linker.ACCOUNT:
+                AccountPage.BUTTON_NO.addEventListener("click", () => {AccountPage.openRegForm()});
+                break;
         }
     }
 

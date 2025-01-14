@@ -33,13 +33,37 @@
             </div>
         </nav>
         <section class = "flex-box">
-            <div class="quastion-box">
-                <center>
-                <h1 style="font-size: 3vw;" id="question-paragraph">Уже есть аккаунт на vector's site?</h1>                </center>
-                <div class="button-choice-over-two">
+            <div class="question-box">
+                <!-- <center> -->
+                    <h1 style="font-size: 3vw; text-align: center;" id="question-paragraph">Уже есть аккаунт на vector's site?</h1>
+                <!-- </center> -->
+                <div class="button-choice-over-two" id="no-yes-buttons">
                     <button class="flex-button" id="choice-button-yes">ДА</button>
                     <button class="flex-button" id="choice-button-no">НЕТ</button>
                 </div>
+                <!-- <div id="box-for-form"> -->
+                <!-- <center> -->
+                <div style="width: 60vw; height: 70vh; display: flex; justify-content: center;">
+                    <form action="" class="hide"  id="registration-form" >
+                
+                        <label for="name">Имя пользователя: </label>
+                        <input type="text" id="name">
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <label for="login">Придумайте логин для аккаунта: </label>
+                        <input type="text" id="login">
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <label for="password">Придумайте пароль для аккаунта:</label>
+                        <input type="text" id="password">
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <label for="e-mail">Электронная почта:</label>
+                        <input type="text" id="e-mail"> 
+                    </form>
+                </div>
+                <!-- </center> -->
+                <!-- </div> -->
             </div>
         </section>
 

@@ -9,6 +9,7 @@ class ElementBehavior {
     }
 
     static hideShowElem(element) {
+        element.removeAttribute("display");
         element.classList.toggle("hide");
     }
 
