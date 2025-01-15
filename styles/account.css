@@ -38,7 +38,7 @@ input[type="submit"] {
     font: inherit;
     border-radius: 18px;
     border: black;
-    width: 15%;
+    min-width: 15%;
     height: 7%;
     cursor: pointer;
 }
@@ -85,7 +85,6 @@ input[type="submit"]:hover {
 }
 
 .animation-for-label {
-    animation-name: label-animation;
     animation-duration: 2.5s;
     animation-delay: 0.3s;
     animation-fill-mode: forwards;
@@ -105,18 +104,26 @@ form input {
 
 form label {
     margin-left: 20%;
-    font-size: 2.3vh;
+    font-size: 2.6vh;
     max-height: fit-content;
 }
 
-.registration-form-visiable {
+.form-visiable {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-row-gap: 4%;
     margin-top: -3%;
-    height: 40vh;
-    grid-template-rows: 80px 80px 80px 80px;
     width: 100%;
+}
+
+#login-form {
+    grid-template-rows: 80px 80px;
+    height: 31vh;
+}
+
+#registration-form {
+    grid-template-rows: 80px 80px 80px 80px;
+    height: 40vh;
 }
 /* #endregion*/
 
@@ -140,9 +147,15 @@ form label {
     }
 }
 
-@keyframes label-animation {
+@keyframes label-animation-r {
     100% {
         margin-left: 3%;
+    }
+}
+
+@keyframes label-animation-l {
+    100% {
+        padding-left: 13%;
     }
 }
 /* #endregion*/

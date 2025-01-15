@@ -9,7 +9,12 @@ class Initializer {
 
         switch (document.location.toString()) {
             case Linker.ACCOUNT:
-                AccountPage.BUTTON_NO.addEventListener("click", () => {AccountPage.openRegForm()});
+                AccountPage.BUTTON_NO.addEventListener("click", () => {
+                    AccountPage.hideQuestionPanel(() => AccountPage.openRegForm());
+                    });
+                AccountPage.BUTTON_YES.addEventListener("click", () => {
+                    AccountPage.hideQuestionPanel(() => AccountPage.openLogForm());
+                });
                 break;
         }
     }
